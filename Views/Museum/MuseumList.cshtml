@@ -1,0 +1,40 @@
+﻿@model turkey_museum.Models.DTO.MuseumListVm
+@{
+
+}
+<div class="tbl-container">
+    <h2>Museums</h2>
+
+    <table>
+        <tr>
+            <th>Museum Name</th>
+            <th>Location</th>
+            <th>Established Year</th>
+            <th>Image</th>
+            <th>Number of Visitors</th>
+            <th>Detail</th>
+            <th>Action</th>
+        </tr>
+        @foreach(var item in Model.MuseumList)
+        {
+            
+            <tr>
+                <td>@item.MuseumName</td>
+                <td>@item.LocationNames</td>
+                <td>@item.OpenedYear</td>
+                <td><img style="height:100px ; width:100px" src="/Uploads/@item.MuseumImage"/></td>       
+                <td>@item.VisitorNumber</td>
+                <td>@item.Details </td>
+                
+                <td>
+                    <a href="/Museum/Edit?Id=@item.Id" class="btn btn-default"><i class="fa fa-edit"></i></a>
+                    <a href="/Museum/Delete?Id=@item.Id" onclick="return window.confirm('Are you sure to delete?')" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+        }
+        
+    </table>
+    <div class="input-container">
+        <a href="/Museum/Add" class="btn btn-sec">Back</a>
+    </div>
+</div>

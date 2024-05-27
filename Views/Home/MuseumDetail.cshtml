@@ -1,0 +1,21 @@
+﻿@model turkey_museum.Models.Domain.Museum
+@{
+}
+
+<div class="museum-detail w-80 m-auto">
+    <div class="img-container">
+        <img alt="image" src="/Uploads/@Model.MuseumImage">
+    </div>
+
+    <div class="detail-container">
+        <h3>@Model.MuseumName</h3>    
+        <h3>@Model.LocationNames</h3>
+        <h3>Estanblished Year : @Model.OpenedYear</h3>
+        <h3>Number of Visitors(yearly) : @Model.VisitorNumber</h3>
+        <h3>Detail : @Model.Details</h3>
+        
+    </div>
+</div>
+<div class="w-80 m-auto">
+    <a href="/Home/Index" class="btn btn-default">Back</a>
+</div>

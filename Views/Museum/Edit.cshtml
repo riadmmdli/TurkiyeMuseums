@@ -1,0 +1,85 @@
+﻿@model turkey_museum.Models.Domain.Museum
+@{
+
+}
+@Html.ValidationSummary()
+<form class="w-40" asp-action="Edit" method="post" enctype="multipart/form-data">
+    <h2 class="pb-10">Update Museum</h2>
+        <input type="hidden" class="input" asp-for="Id">
+        <input type="hidden" class="input" asp-for="MuseumImage">
+        
+
+
+
+    <div class="input-container">
+        <label asp-for="MuseumName" class="w-40">Museum Name</label>
+        <input type="text" class="input" asp-for="MuseumName">
+    </div>
+
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="MuseumName"></span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="ImageFile" class="w-40">Upload Image</label>
+        <input type="file" asp-for="ImageFile">
+    </div>
+
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="ImageFile"></span>
+    </div>
+
+
+    <div class="input-container">
+        <label asp-for="Locations" class="w-40">Location</label>
+        <select asp-items="Model.LocationList" class="input" asp-for="Locations">
+            <option value="">--select--</option>
+        </select>
+    </div>
+
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Locations"></span>
+    </div>
+
+
+    <div class="input-container">
+        <label asp-for="OpenedYear" class="w-40">Established Year</label>
+        <input type="text" class="input" asp-for="OpenedYear">
+    </div>
+
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="OpenedYear"></span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="VisitorNumber" class="w-40">Number of Visitors(yearly)</label>
+        <input type="text" class="input" asp-for="VisitorNumber">
+    </div>
+
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="VisitorNumber"></span>
+    </div>
+
+    <div class="input-container">
+        <label asp-for="Details" class="w-40">Detail</label>
+        <input type="text" class="input" asp-for="Details">
+    </div>
+
+    <div class="message-box pd-x-28 error">
+        <span asp-validation-for="Details"></span>
+    </div>
+
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert mb-1">
+            @TempData["msg"]
+        </div>
+    }
+
+
+    <div class="input-container">
+        <button class="btn btn-default" type="submit">Save</button>
+        <a class="btn btn-sec" href="/Museum/MuseumList">All records</a>
+    </div>
+</form>

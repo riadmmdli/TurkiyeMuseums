@@ -1,0 +1,5 @@
+﻿@{
+    string username = User.Identity.Name;
+    var isAdmin = !string.IsNullOrEmpty(username) && Context.User.IsInRole("Admin");
+    Layout = isAdmin ? "_AdminLayout" : "_Layout";
+}

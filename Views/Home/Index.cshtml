@@ -1,0 +1,49 @@
+﻿@model turkey_museum.Models.DTO.MuseumListVm
+
+@{
+    string username = User.Identity.Name;
+    var isAdmin = !string.IsNullOrEmpty(username) && Context.User.IsInRole("Admin");
+    Layout = isAdmin ? "_AdminLayout" : "_Layout";
+}
+
+<section class="search-bar">
+    <form method="get" asp-action="Index">
+        <input type="text" name="term" placeholder="Search museums">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <a class="btn btn-default" href="/Home/Index">All</a>
+    </form>
+</section>
+
+<section class="museum">
+    @foreach (var museum in Model.MuseumList)
+    {
+        <div class="museum-card" onclick="window.location.href='/Home/MuseumDetail?museumId=@museum.Id'">
+            <div class="museum-image">
+                <img src="/Uploads/@museum.MuseumImage" alt="@museum.MuseumName">
+            </div>
+            <div class="museum-info">
+                <h4>@museum.MuseumName</h4>
+                 @*Uncomment if needed:*@
+            <h4>@museum.LocationNames</h4>
+            @*<h4>Established Year: @museum.OpenedYear</h4>
+            <h4>Number of Visitors (yearly): @museum.VisitorNumber</h4>
+            @*<p><h5>Click to see details</h5>
+            @*<h5>Detail: @museum.Details</h5>*@
+            </div>
+        </div>
+    }
+</section>
+
+<div class="pagination">
+    @for (int i = 1; i <= Model.TotalPages; i++)
+    {
+        if (i == Model.CurrentPage)
+        {
+            <a href="/Home/Index?currentPage=@i&term=@Model.Term" class="active">@i</a>
+        }
+        else
+        {
+            <a href="/Home/Index?currentPage=@i&term=@Model.Term">@i</a>
+        }
+    }
+</div>

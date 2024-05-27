@@ -1,0 +1,29 @@
+﻿@model IEnumerable<turkey_museum.Models.Domain.Location>
+@{
+
+}
+<div class="tbl-container">
+    <h2>Locations </h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            
+            <tr>
+                <td>@item.LocationName</td>
+                <td>
+                    <a href="/Location/Edit?Id=@item.Id" class="btn btn-default"><i class="fa fa-edit"></i></a>
+                    <a href="/Location/Delete?Id=@item.Id" onclick="return window.confirm('Are you sure to delete?')" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+        }
+        
+    </table>
+    <div class="input-container">
+        <a href="/Location/Add" class="btn btn-sec">Back</a>
+    </div>
+</div>
