@@ -271,3 +271,4 @@ C:\Users\riadm\source\repos\TurkiyeMuseums\TurkiyeMuseums\obj\Debug\net8.0\refin
 C:\Users\riadm\source\repos\TurkiyeMuseums\TurkiyeMuseums\obj\Debug\net8.0\TurkiyeMuseums.pdb
 C:\Users\riadm\source\repos\TurkiyeMuseums\TurkiyeMuseums\obj\Debug\net8.0\TurkiyeMuseums.genruntimeconfig.cache
 C:\Users\riadm\source\repos\TurkiyeMuseums\TurkiyeMuseums\obj\Debug\net8.0\ref\TurkiyeMuseums.dll
+C:\Users\riadm\source\repos\TurkiyeMuseums\TurkiyeMuseums\obj\Debug\net8.0\TurkiyeMuseums.sourcelink.json

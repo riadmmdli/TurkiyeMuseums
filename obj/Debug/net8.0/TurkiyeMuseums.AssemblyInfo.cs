@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TurkiyeMuseums")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a17e423d5a693f0b91fdf63a4224dd3e77844c6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TurkiyeMuseums")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TurkiyeMuseums")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
