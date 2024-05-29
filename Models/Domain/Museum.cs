@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace turkey_museum.Models.Domain
+namespace TurkiyeMuseums.Models.Domain
 {
     public class Museum
     {

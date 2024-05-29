@@ -1,4 +1,4 @@
-namespace turkey_museum.Models
+namespace TurkiyeMuseums.Models
 {
     public class ErrorViewModel
     {

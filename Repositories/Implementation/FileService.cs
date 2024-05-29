@@ -1,6 +1,6 @@
-﻿using turkey_museum.Repositories.Abstract;
+﻿using TurkiyeMuseums.Repositories.Abstract;
 
-namespace turkey_museum.Repositories.Implementation
+namespace TurkiyeMuseums.Repositories.Implementation
 {
     public class FileService : IFileService
     {

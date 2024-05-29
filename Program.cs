@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Protocol.Core.Types;
-using turkey_museum.Models.Domain;
-using turkey_museum.Repositories.Abstract;
-using turkey_museum.Repositories.Implementation;
+using TurkiyeMuseums.Models.Domain;
+using TurkiyeMuseums.Repositories.Abstract;
+using TurkiyeMuseums.Repositories.Implementation;
 
 
 var builder = WebApplication.CreateBuilder(args);

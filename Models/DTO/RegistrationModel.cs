@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace turkey_museum.Models.DTO
+namespace TurkiyeMuseums.Models.DTO
 {
     public class RegistrationModel
     {

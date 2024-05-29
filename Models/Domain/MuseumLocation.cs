@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace turkey_museum.Models.Domain
+namespace TurkiyeMuseums.Models.Domain
 {
     public class MuseumLocation
     {

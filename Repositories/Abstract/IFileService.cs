@@ -1,4 +1,4 @@
-﻿namespace turkey_museum.Repositories.Abstract
+﻿namespace TurkiyeMuseums.Repositories.Abstract
 {
     public interface IFileService
     {

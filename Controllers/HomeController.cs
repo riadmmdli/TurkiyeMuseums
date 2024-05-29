@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using turkey_museum.Repositories.Abstract;
+using TurkiyeMuseums.Repositories.Abstract;
 
-namespace turkey_museum.Controllers
+namespace TurkiyeMuseums.Controllers
 {
     
     public class HomeController : Controller
@@ -12,7 +12,7 @@ namespace turkey_museum.Controllers
         {
             _museumService = museumService;
         }
-        public IActionResult Index(string term="" , int currentPage = 1 )
+        public IActionResult Index(string term="" , int currentPage = 1 , int pageSize = 10)
         {
             var museums = _museumService.List(term , true , currentPage);
             return View(museums);

@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using turkey_museum.Models.Domain;
-using turkey_museum.Repositories.Abstract;
+using TurkiyeMuseums.Models.Domain;
+using TurkiyeMuseums.Repositories.Abstract;
 
-namespace turkey_museum.Controllers
+namespace TurkiyeMuseums.Controllers
 {
     [Authorize]
     public class MuseumController : Controller

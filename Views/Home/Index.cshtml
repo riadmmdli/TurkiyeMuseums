@@ -1,4 +1,4 @@
-﻿@model turkey_museum.Models.DTO.MuseumListVm
+﻿@model TurkiyeMuseums.Models.DTO.MuseumListVm
 
 @{
     string username = User.Identity.Name;
@@ -34,6 +34,7 @@
     }
 </section>
 
+
 <div class="pagination">
     @for (int i = 1; i <= Model.TotalPages; i++)
     {
@@ -44,6 +45,8 @@
         else
         {
             <a href="/Home/Index?currentPage=@i&term=@Model.Term">@i</a>
+
         }
     }
+
 </div>

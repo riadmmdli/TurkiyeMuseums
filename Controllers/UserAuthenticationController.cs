@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using turkey_museum.Models.DTO;
-using turkey_museum.Repositories.Abstract;
+using TurkiyeMuseums.Models.DTO;
+using TurkiyeMuseums.Repositories.Abstract;
 
-namespace turkey_museum.Controllers
+namespace TurkiyeMuseums.Controllers
 {
     public class UserAuthenticationController : Controller
     {

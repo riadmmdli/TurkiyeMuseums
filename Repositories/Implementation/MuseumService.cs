@@ -1,10 +1,10 @@
 ﻿
 using System.Drawing.Text;
-using turkey_museum.Models.Domain;
-using turkey_museum.Models.DTO;
-using turkey_museum.Repositories.Abstract;
+using TurkiyeMuseums.Models.Domain;
+using TurkiyeMuseums.Models.DTO;
+using TurkiyeMuseums.Repositories.Abstract;
 
-namespace turkey_museum.Repositories.Implementation
+namespace TurkiyeMuseums.Repositories.Implementation
 {
     public class MuseumService : IMuseumService
     {
@@ -78,11 +78,11 @@ namespace turkey_museum.Repositories.Implementation
                 term = term.ToLower();
                 list = list.Where(a=>a.MuseumName.ToLower().StartsWith(term)).ToList();
             }
-            if (!paging)
+            if (paging)
             {
 
 
-                int pageSize = 5;
+                int pageSize = 10;
                 int count = list.Count;
                 int TotalPages = (int)Math.Ceiling(count/(double)pageSize);
                 list = list.Skip((currentPage-1)*pageSize).Take(pageSize).ToList();

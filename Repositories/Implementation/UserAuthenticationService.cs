@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using turkey_museum.Models.Domain;
-using turkey_museum.Models.DTO;
-using turkey_museum.Repositories.Abstract;
+using TurkiyeMuseums.Models.Domain;
+using TurkiyeMuseums.Models.DTO;
+using TurkiyeMuseums.Repositories.Abstract;
 using System.Security.Claims;
 
 
-namespace turkey_museum.Repositories.Implementation
+namespace TurkiyeMuseums.Repositories.Implementation
 {
     public class UserAuthenticationService : IUserAuthenticationService
     {

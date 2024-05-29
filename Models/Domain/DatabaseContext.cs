@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace turkey_museum.Models.Domain
+namespace TurkiyeMuseums.Models.Domain
 {
     public class DatabaseContext : IdentityDbContext<ApplicationUser>
     {

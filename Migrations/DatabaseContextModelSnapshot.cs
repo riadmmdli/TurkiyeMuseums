@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using turkey_museum.Models.Domain;
+using TurkiyeMuseums.Models.Domain;
 
 #nullable disable
 
@@ -155,7 +155,7 @@ namespace TurkiyeMuseums.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("turkey_museum.Models.Domain.ApplicationUser", b =>
+            modelBuilder.Entity("TurkiyeMuseums.Models.Domain.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -224,7 +224,7 @@ namespace TurkiyeMuseums.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("turkey_museum.Models.Domain.Location", b =>
+            modelBuilder.Entity("TurkiyeMuseums.Models.Domain.Location", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -241,7 +241,7 @@ namespace TurkiyeMuseums.Migrations
                     b.ToTable("Location");
                 });
 
-            modelBuilder.Entity("turkey_museum.Models.Domain.Museum", b =>
+            modelBuilder.Entity("TurkiyeMuseums.Models.Domain.Museum", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -270,7 +270,7 @@ namespace TurkiyeMuseums.Migrations
                     b.ToTable("Museum");
                 });
 
-            modelBuilder.Entity("turkey_museum.Models.Domain.MuseumLocation", b =>
+            modelBuilder.Entity("TurkiyeMuseums.Models.Domain.MuseumLocation", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -300,7 +300,7 @@ namespace TurkiyeMuseums.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("turkey_museum.Models.Domain.ApplicationUser", null)
+                    b.HasOne("TurkiyeMuseums.Models.Domain.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -309,7 +309,7 @@ namespace TurkiyeMuseums.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("turkey_museum.Models.Domain.ApplicationUser", null)
+                    b.HasOne("TurkiyeMuseums.Models.Domain.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -324,7 +324,7 @@ namespace TurkiyeMuseums.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("turkey_museum.Models.Domain.ApplicationUser", null)
+                    b.HasOne("TurkiyeMuseums.Models.Domain.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -333,7 +333,7 @@ namespace TurkiyeMuseums.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("turkey_museum.Models.Domain.ApplicationUser", null)
+                    b.HasOne("TurkiyeMuseums.Models.Domain.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

@@ -1,10 +1,10 @@
 ﻿
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
-using turkey_museum.Models.Domain;
-using turkey_museum.Models.DTO;
+using TurkiyeMuseums.Models.Domain;
+using TurkiyeMuseums.Models.DTO;
 
 
-namespace turkey_museum.Repositories.Abstract
+namespace TurkiyeMuseums.Repositories.Abstract
 {
     public interface ILocationService
     {
