@@ -23,7 +23,11 @@ namespace TurkiyeMuseums.Controllers
             var museum = _museumService.GetById(museumId);
             return View(museum);
         }
+        public ActionResult About()
+        {
+            return View();
+        }
 
-        
+
     }
 }

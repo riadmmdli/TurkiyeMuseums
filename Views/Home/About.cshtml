@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <style>
+        .center-message {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            text-align: center;
+            /* Adjust this value to move the content higher */
+            margin-top: -100px;
+        }
+
+        .letter {
+            display: inline-block;
+            transform: translateY(-100%);
+            opacity: 0;
+            animation: appear 0.5s forwards;
+        }
+
+        @@keyframes appear {    
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="center-message">
+    <h1 id="heading1">WELCOME TO OUR PAGE</h1>
+    <h2 id="heading2">WE ARE HERE TO SERVE YOU MUSEUMS OF OUR COUNTRY TURKIYE</h2>
+        <h4 id="heading3">
+            Turkey is a treasure trove of history and culture, and its museums are a testament to its rich and diverse heritage. From the ancient relics of the Anatolian civilizations to the grandeur of the Ottoman Empire, Turkish museums offer a captivating journey through time. Visitors can explore the awe-inspiring collections at the Istanbul Archaeological Museums, marvel at the exquisite art and artifacts in the Topkapi Palace Museum, and immerse themselves in the contemporary exhibitions at the Istanbul Modern. Each museum tells a unique story, preserving the legacy of Turkey's past while celebrating its vibrant present. Whether you're an avid history enthusiast or a curious traveler, Turkey's museums promise an unforgettable experience, unveiling the intricate tapestry of a nation that has been a crossroads of civilizations for millennia.
+        </h4>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        function animateText(element) {
+            const text = element.innerText;
+            element.innerHTML = '';
+            for (let i = 0; i < text.length; i++) {
+                const span = document.createElement('span');
+                span.innerText = text[i];
+                if (text[i] === ' ') {
+                    span.style.marginRight = '0.3em'; // Add space for each space character
+                }
+                span.className = 'letter';
+                span.style.animationDelay = `${i * 0.05}s`;
+                element.appendChild(span);
+            }
+        }
+
+        const heading1 = document.getElementById('heading1');
+        const heading2 = document.getElementById('heading2');
+        const heading3 = document.getElementById('heading3');
+        animateText(heading1);
+        animateText(heading2);
+        animateText(heading3);
+    });
+</script>
+
+</body>
+</html>

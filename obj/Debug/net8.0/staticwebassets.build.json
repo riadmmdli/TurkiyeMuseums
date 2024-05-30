@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AeyqFhBKqhAFFouoD0e0X52cvtVJeM9opZW6bwVZnTA=",
+  "Hash": "ao9Ow+GxBI+OkDOYjaZbX4yFWmUhxk0kli0X+Nb+BwU=",
   "Source": "TurkiyeMuseums",
   "BasePath": "_content/TurkiyeMuseums",
   "Mode": "Default",
@@ -1347,6 +1347,25 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\476e1853-f45c-4101-a998-8b371f0f3788.jpg"
     },
     {
+      "Identity": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\Uploads\\48d3f6b2-6e4a-4f6f-a729-1c37f9d827f6.png",
+      "SourceId": "TurkiyeMuseums",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\",
+      "BasePath": "_content/TurkiyeMuseums",
+      "RelativePath": "Uploads/48d3f6b2-6e4a-4f6f-a729-1c37f9d827f6.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\48d3f6b2-6e4a-4f6f-a729-1c37f9d827f6.png"
+    },
+    {
       "Identity": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\Uploads\\5c116bb9-f40b-4e71-a8a5-41769b82575d.jpg",
       "SourceId": "TurkiyeMuseums",
       "SourceType": "Discovered",
@@ -1518,6 +1537,25 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\8537f414-ec03-47a7-8634-29f08f4d70c4.jpg"
     },
     {
+      "Identity": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\Uploads\\aff612c0-4cda-4d19-8c8d-d572fdf37d31.jpg",
+      "SourceId": "TurkiyeMuseums",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\",
+      "BasePath": "_content/TurkiyeMuseums",
+      "RelativePath": "Uploads/aff612c0-4cda-4d19-8c8d-d572fdf37d31.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\aff612c0-4cda-4d19-8c8d-d572fdf37d31.jpg"
+    },
+    {
       "Identity": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\Uploads\\b2aba343-d890-4347-acb0-5366e2344e81.jpg",
       "SourceId": "TurkiyeMuseums",
       "SourceType": "Discovered",
@@ -1575,6 +1613,44 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\d2511fbe-eda0-4667-a77a-40e12388e21e.jpg"
     },
     {
+      "Identity": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\Uploads\\da0c8f70-9054-4dc3-98ff-76f96e3c2ea5.jpg",
+      "SourceId": "TurkiyeMuseums",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\",
+      "BasePath": "_content/TurkiyeMuseums",
+      "RelativePath": "Uploads/da0c8f70-9054-4dc3-98ff-76f96e3c2ea5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\da0c8f70-9054-4dc3-98ff-76f96e3c2ea5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\Uploads\\e4deff04-687e-4a82-b1c7-c4bf8e4f71b5.png",
+      "SourceId": "TurkiyeMuseums",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\",
+      "BasePath": "_content/TurkiyeMuseums",
+      "RelativePath": "Uploads/e4deff04-687e-4a82-b1c7-c4bf8e4f71b5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\e4deff04-687e-4a82-b1c7-c4bf8e4f71b5.png"
+    },
+    {
       "Identity": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\Uploads\\e504a4db-46e7-4ec3-87ea-5df05548bfbc.jpg",
       "SourceId": "TurkiyeMuseums",
       "SourceType": "Discovered",
@@ -1592,6 +1668,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\e504a4db-46e7-4ec3-87ea-5df05548bfbc.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\Uploads\\eb9f7b1a-b1e2-45a1-a26c-344c98240697.png",
+      "SourceId": "TurkiyeMuseums",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\riadm\\source\\repos\\TurkiyeMuseums\\TurkiyeMuseums\\wwwroot\\",
+      "BasePath": "_content/TurkiyeMuseums",
+      "RelativePath": "Uploads/eb9f7b1a-b1e2-45a1-a26c-344c98240697.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\eb9f7b1a-b1e2-45a1-a26c-344c98240697.png"
     }
   ]
 }
